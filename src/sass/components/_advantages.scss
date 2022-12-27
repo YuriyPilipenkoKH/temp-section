@@ -1,0 +1,144 @@
+.advantages {
+  background-color: var(--backgroundColor);
+  padding-bottom: 32px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
+
+.advantages__counter {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(44 / 36);
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: calc(59 / 48);
+
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: calc(71 / 58);
+
+    margin-bottom: 12px;
+  }
+}
+
+.advantages__paragraph {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(20 / 12);
+  text-align: center;
+
+  color: #fcfcfc;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(28 / 16);
+
+    text-align: center;
+  }
+}
+
+.advantages__item {
+    position: relative;
+    padding-top: 65px;
+    width: 220px;
+  
+    @media screen and (min-width: 768px) {
+      padding-top: 80px;
+      width: 150px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      padding-top: 90px;
+      width: 220px;
+    }
+  }
+
+.adv-item-first {
+    // fill: #ff0;
+    // color: #ff0  ;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+
+    transform: translateX(-50%);
+    background-color: var(--accentColor);
+    border-radius: 50%;
+    background-image: url(../images/adv/cow.svg);
+ 
+  }
+}
+
+.adv-item-second {
+    &::before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        left: 50%;
+        width: 50px;
+        height: 50px;
+    
+        transform: translateX(-50%);
+        background-color: var(--accentColor);
+        border-radius: 50%;
+        background-image: url(../images/adv/weight.svg);
+     
+      }
+}
+
+.adv-item-third {
+    &::before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        left: 50%;
+        width: 50px;
+        height: 50px;
+    
+        transform: translateX(-50%);
+        background-color: var(--accentColor);
+        border-radius: 50%;
+        background-image: url(../images/adv/ice-crema.svg);
+     
+      }
+}

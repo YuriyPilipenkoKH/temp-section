@@ -1,0 +1,59 @@
+.gallery {
+    background-image: linear-gradient(
+        to top,
+        transparent 80%,
+        var(--backgroundColor) 80%
+      );
+    
+      @media screen and (min-width: 768px) {
+        background-image: linear-gradient(
+          to top,
+          transparent 60%,
+          var(--backgroundColor) 60%
+        );
+      }
+    
+      @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(
+          to top,
+          transparent 80%,
+          var(--backgroundColor) 80%
+        );
+      }
+}
+
+.gallery__slider {
+    border: 2x solid blue;
+    border-radius: 20px;
+    min-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+} 
+
+.gallery__slider-line {
+    display: flex; 
+    transition: all  ease 1s;
+}
+
+.slider-btn-wrap {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.slider-prev,
+.slider-next {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: transparent;
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+   
+    &:hover,
+    &:focus {
+        background-color: var( --btn-hoverColor);
+        color: var(--accentColor);
+    }
+}
