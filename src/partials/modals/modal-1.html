@@ -1,0 +1,93 @@
+<!-- <a href="#0" id="info_1" class="info popup-trigger" data-number="1" title="info">Popup 1</a>
+
+<a herf="#0" id="info_2" class="info popup-trigger" data-number="2" title="info">Popup 2</a>
+
+
+<a herf="#0" id="info_3" class="info popup-trigger" data-number="3" title="info">Popup 3</a>
+
+<a herf="#0" id="info_4" class="info popup-trigger" data-number="4" title="info">Popup 4</a>
+
+<a herf="#0" id="info_5" class="info popup-trigger" data-number="5" title="info">Popup 5</a> -->
+
+
+
+    <div class="popup popup-1" >
+      <div class="popup-container popup-buy">
+
+        <a href="#0" class="popup-close img-replace">Close</a>
+        <h1 class="popup__title">Buy now</h1>
+
+        <ul class="popup__list">
+            <li class="popup__item color-green">
+                <div class="popup__products">
+                    <img class="popup__products-img"
+                    srcset="./images/prod/icecream-m.png 1x, ./images/prod/icecream-m@2x.png 2x"
+                    src="./images/prod/icecream-m.png"
+                    alt="ice" width="132"
+                    />
+                    <p class="popup__text">ice cream</p>
+                </div>
+            </li>
+            <!-- ============================================================================== -->
+            <li class="popup__item color-orange">
+                <div class="popup__products">
+                    <img class="popup__products-img"
+                    srcset="./images/prod/icecoffee-m.png 1x, ./images/prod/icecoffee-m@2x.png 2x"
+                    src="./images/prod/icecoffee-m.png"
+                    alt="coffee" width="132"
+                                  />
+                                  <p class="popup__text">ice coffee</p>
+                </div>
+            </li>
+              <!-- ============================================================================== -->
+            <li class="popup__item color-pink">
+                <div class="popup__products">
+                    <img class="popup__products-img"
+                    srcset="./images/prod/milkshake-m.png 1x, ./images/prod/milkshake-m@2x.png 2x"
+                    src="./images/prod/milkshake-m.png"
+                    alt="shake" width="132"
+                                  />
+                                  <p class="popup__text">milkshake</p>
+                </div>
+            </li>
+        </ul>
+        <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <form class="form__buy">
+            <input
+            class="form__input buy-now__form-input"
+            type="text"
+            name="username"
+            placeholder="Name"
+            required
+          />
+          <input
+            class="form__input buy-now__form-input"
+            type="tel"
+            name="phone"
+            placeholder="Phone"
+            required
+            pattern="^\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})$"
+          />
+          <!-- The pattern see in https://stackoverflow.com/questions/58248441/regex-template-for-ukrainian-phone-numbers -->
+          <textarea
+            class="form__input form__input-textarea "
+            name="comment"
+            placeholder="Comment"
+          ></textarea>
+
+        </form>
+
+        <button class="popup-buy-btn btn__submit" type="button">Submit</button>
+
+      </div> 
+    </div> 
+
+   
+
+
+
+
+
+
+
+    
